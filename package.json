@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "add": "^2.0.6",
+    "global": "^4.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1"
+  }
+}
