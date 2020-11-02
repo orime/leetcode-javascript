@@ -8,6 +8,9 @@
 ⬜ 搭建基本环境，包括 ESLint，Debug 调试
 ⬜ 创建刷题路线图
 
+## 📃排版
+笔记内容按照 [中文文案排版指北](https://mazhuang.org/wiki/chinese-copywriting-guidelines/)进行排版。
+
 
 ## 🎋优秀项目参考
 - https://github.com/sl1673495/leetcode-javascript
