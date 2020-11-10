@@ -14,8 +14,6 @@ F(0) = 0,   F(1) = 1
 F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 给定 N，计算 F(N)。
 
- 
-
 示例 1：
 
 输入：2
@@ -31,9 +29,6 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 输入：4
 输出：3
 解释：F(4) = F(3) + F(2) = 2 + 1 = 3.
- 
-
-
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/fibonacci-number
@@ -77,7 +72,8 @@ const fib1 = function(N) {
  * @param {number} N 
  * @param {number} dp 
  */
-const fib2 = function(N, dp = [0, 1]){
+const fib2 = function(N){
+  let dp = [0, 1]
   for(let i = 1; i < N; i++){
     dp = [dp[1], dp[0] + dp[1]]
   }
@@ -90,7 +86,8 @@ const fib2 = function(N, dp = [0, 1]){
  * @param {*} p 
  * @param {*} dp 
  */
-const fib3 = function(N, p = 0, dp = 1) {
+const fib3 = function(N) {
+  let p = 0, dp = 1
   for( let i = 1; i < N; i++ ) {
     dp = p + (p = dp)
   }
@@ -129,8 +126,12 @@ console.timeEnd('4')
 
 /**
 354224848179262000000
-1: 6.229ms
+1: 4.207ms
 354224848179262000000
-2: 0.22ms
+2: 0.124ms
 354224848179262000000
-3: 0.099ms */
+3: 0.075ms
+354224848179262000000
+4: 0.113ms
+*/
+
