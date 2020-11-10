@@ -9,6 +9,6 @@ module.exports = {
         "ecmaVersion": 12
     },
     "rules": {
-        "no-unused-vars": 1,
+        "no-unused-vars": 0,
     }
 };
