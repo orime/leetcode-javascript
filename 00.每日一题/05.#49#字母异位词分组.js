@@ -51,5 +51,45 @@ const groupAnagrams = function (strs) {
   return [...result].map(item => item[1].value)
 }
 
+/**
+ * @param {*} strs 
+ * 
+ */
+const groupAnagrams1 = function (strs) {
+  function sort(str){
+    return str.split('').sort().join('')
+  }
+  const resultObj = {}
+  for(let i = 0; i < strs.length; i++){
+    const target = strs[i]
+    let sortStr = sort(target)
+    if(resultObj[sortStr]){
+      resultObj[sortStr].push(target)
+    } else {
+      resultObj[sortStr] = [target]
+    }
+  }
+  return Object.values(resultObj)
+}
+
+const groupAnagrams2 = strs => {
+    let map = new Map()
+    strs.forEach(str=>{
+        let key = str.split('').sort().join('') ;
+        map.has(key) ? map.get(key).push(str) : map.set(key,[str])
+    })
+    return [...map.values()]
+};
+
+const groupAnagrams3 = strs => {
+    let obj = {}
+    strs.forEach(str=>{
+        let key = str.split('').sort().join('') ;
+        obj[key] ? obj[key].push(str) : obj[key] = [str]
+    })
+    return Object.values(obj)
+};
+
+
 let test = ["eat", "tea", "tan", "ate", "nat", "bat"]
-console.log(groupAnagrams(test));
+console.log(groupAnagrams3(test));
