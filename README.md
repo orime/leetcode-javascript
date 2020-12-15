@@ -15,6 +15,8 @@
 ## 🎋优秀项目参考
 - https://github.com/sl1673495/leetcode-javascript
 - https://github.com/Chocolate1999/leetcode-javascript
-- ![路线图地址](https://camo.githubusercontent.com/10b3b52a044626e3ef9b05d67995be3f98ef97f5/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f63686f636f6c617465313939392f63646e2f696d672f32303230313032313136313034352e706e67)
+
+## 🥕参考路线图
+- ![参考路线图](https://cdn.jsdelivr.net/gh/Orime112/picbed/img/%E7%AE%97%E6%B3%95%E9%A2%98%E5%88%B7%E9%A2%98%E8%B7%AF%E7%BA%BF.png)
 
 
