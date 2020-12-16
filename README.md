@@ -11,12 +11,9 @@
 ## 📃排版
 笔记内容按照 [中文文案排版指北](https://mazhuang.org/wiki/chinese-copywriting-guidelines/)进行排版。
 
+## 暂定路线图
+![刷题路线图](https://cdn.jsdelivr.net/gh/Orime112/picbed/img/%E7%AE%97%E6%B3%95%E9%A2%98%E5%88%B7%E9%A2%98%E8%B7%AF%E7%BA%BF.png)
 
 ## 🎋优秀项目参考
 - https://github.com/sl1673495/leetcode-javascript
 - https://github.com/Chocolate1999/leetcode-javascript
-
-## 🥕路线图
-![参考路线图](https://cdn.jsdelivr.net/gh/Orime112/picbed/img/%E7%AE%97%E6%B3%95%E9%A2%98%E5%88%B7%E9%A2%98%E8%B7%AF%E7%BA%BF.png)
-
-
