@@ -38,6 +38,7 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
  * * 常规解法，递归实现
  * @param {number} N
  * @return {number}
+ 时间复杂度O(2^n)，爆炸
  */
 const fib = function(N) {
   if(N === 0 ) {

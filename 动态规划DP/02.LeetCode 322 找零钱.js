@@ -56,7 +56,7 @@ const coinChange1 = (coins, amount) => {
     if(record[n]) return record[n]
     let res = Infinity
     for(let coin of coins){
-      let subProblem = dp(n-coin)
+      let subProblem = dp(n-coin) // * 如果计算总数为11， 则计算 总数为10 并赋值给 subProblem
       if(subProblem === -1) continue // ! 子问题无解，跳过
       res = Math.min(res, 1+subProblem) // ? 为什么要 +1？因为当 n === coin 的时候，subProblem 等于 0 了，这种情况下需要 1 枚硬币
     }
@@ -67,5 +67,5 @@ const coinChange1 = (coins, amount) => {
 }
 
 
-console.log(coinChange([1, 2, 5], 1089));
-console.log(coinChange1([1, 2, 5], 1089));
+console.log(coinChange([1, 2, 5], 11));
+console.log(coinChange1([1, 2, 5], 11));
