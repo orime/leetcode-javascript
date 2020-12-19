@@ -35,8 +35,7 @@
 const buildTree = function(inorder, postorder) {
   const val = postorder.pop()
   const index = inorder.indexOf(val)
-  if(!val) return null
-  return {val,
+  return val == undefined ? null : {val,
     left: buildTree(inorder.slice(0, index), postorder.slice(0, index)),
     right: buildTree(inorder.slice(index+1), postorder.slice(index))
   }
